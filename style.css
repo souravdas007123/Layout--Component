@@ -1,0 +1,134 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+/* variable */
+
+:root{
+
+    /* theame  */
+
+    --theame1:#DCCFC0; /*  */
+    --theame2:#EEEEEE; /*  */
+    --theame3:#FAF9EE; /*  */
+    --theame4:#A2AF9B; /* */
+    --body-color:white;
+    --navbar-color:white;
+    --logo-color:white;
+    --button-color:white;
+    --section-color:white;
+    --heading-color:black;
+    --paragraph-color:black;
+    --anchor-color:black;
+
+    /* font  */
+
+    --fontFamily-body:'Ubuntu', sans-serif;
+    --fontFamily-heading:'Plus Jakarta Sans', sans-serif;
+    --fontFamily-paragraph:'Plus Jakarta Sans', sans-serif;
+    --fontFamily-anchor:'Plus Jakarta Sans', sans-serif;
+
+     /* font size  */
+
+     --fontSize-body:clamp(1rem, 2vw + 1rem, 1.125rem); /* 16-18 pixel https://modern-fluid-typography.vercel.app/ */
+     --fontSize-h1:clamp(2rem, 2vw + 1rem, 2.5rem); /* 32-40 pixel https://modern-fluid-typography.vercel.app/ */
+     --fontSize-h2:clamp(1.75rem, 2vw + 1rem, 2rem); /* 28-32 pixel  https://modern-fluid-typography.vercel.app/ */
+     --fontSize-h3:clamp(1.5rem, 2vw + 1rem, 1.75rem); /* 24-28 pixel  https://modern-fluid-typography.vercel.app/ */
+     --fontSize-h4:clamp(1.25rem, 2vw + 1rem, 1.5rem); /* 20-24 pixel  https://modern-fluid-typography.vercel.app/ */
+     --fontSize-h5:clamp(1rem, 2vw + 1rem, 1.25rem); /* 16-20 pixel https://modern-fluid-typography.vercel.app/ */
+     --fontSize-h6:clamp(0.813rem, 2vw + 1rem, 1rem); /* 13-16 pixel   https://modern-fluid-typography.vercel.app/ */
+     --fontSize-paragraph:clamp(0.813rem, 2vw + 1rem, 1rem);  /*13-16 pixel  https://modern-fluid-typography.vercel.app/ */
+     --fontSize-anchortag:clamp(0.813rem, 2vw + 1rem, 1rem); /* 13-16 pixel  https://modern-fluid-typography.vercel.app/ */
+     --fontSize-small:clamp(0.75rem, 1.8vw + 1rem, 0.813rem); /* 12-13 pixel  https://modern-fluid-typography.vercel.app/ */
+     --fontSize-extrasmall:clamp(0.5rem, 1.2vw + 0.5rem, 0.65rem);
+     /* radius  */
+
+     --borderRadius:0.7rem;
+     --borderRadius-button:0.6rem;
+
+     /* spacing  */
+
+     --large-spacing:3rem;
+     --medium-spacing:2rem;
+     --small-spacing:1rem;
+     --horizontal-spacing:0.7rem 0;
+     --horizontal-spacing-small:0.3rem 0;
+     --vertical-spacing:0 1.5rem;
+     --vertical-spacing-small:0 1.1rem;
+  
+
+     /* button spacing  */
+
+     --button-spacing:0.7rem;
+     --button-vertical-spacing:0 0.7rem;
+     --button-horizontal-spacing:1.6rem 0;
+
+}
+
+/* body  */
+html{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1rem;
+}
+
+body{
+    width: 100vw;
+    height: 100dvh;
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+aside{
+    background-color: aqua;
+    padding: 15px 0;
+}
+main{
+    background-color: #DCCFC0;
+}
+.navbar{
+    background-color: #A2AF9B;
+    padding: 15px 0;
+}
+/* heading */
+
+h1{
+    font-size: var(--fontSize-h1);
+}
+h2{
+    font-size: var(--fontSize-h2);
+}
+h3{
+    font-size: var(--fontSize-h3);
+}
+h4{
+    font-size: var(--fontSize-h4);
+}
+h5{
+    font-size: var(--fontSize-h5);
+}
+h6{
+    font-size: var(--fontSize-h6);
+}
+
+/* paragraph  */
+
+p{
+    font-size: var(--fontFamily-paragraph);
+}
+
+/* anchor  */
+
+a{
+    font-size: var(--fontSize-anchortag);
+    color:black;
+}
+@media(max-width:800px){
+    body{
+        grid-template-columns: 1fr;
+    }
+    .side{
+    grid-row: 2;
+}
+}
