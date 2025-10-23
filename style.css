@@ -75,8 +75,8 @@ html{
 }
 
 body{
-    width: 100vw;
-    height: 100dvh;
+    min-width: 100vw;
+    min-height: 100dvh;
     display: grid;
     grid-template-columns: auto 1fr;
 }
@@ -125,6 +125,7 @@ a{
 }
 @media(max-width:800px){
     body{
+        width: 100vw;
         position: relative;
         grid-template-columns: 1fr;
     }
@@ -136,14 +137,17 @@ a{
         position: fixed;
         bottom: 0;
         left: 0;
-        width: 100%;
-        height: 60px;
+        min-width: 100% !important;
+        height: 40px;
     }
     .navbar{
         position: fixed;
         top: 0;
         left: 0;
-        width: 100%;
+        min-width: 100% !important;
         height: 40px;
+    }
+    .hide{
+        display: none;
     }
 }
